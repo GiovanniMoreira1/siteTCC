@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@media (max-width: 768px) {
+
+    .cabecalho {
+      padding: 1% 3%;
+    }
+    .botoes a {
+      font-size: 18px;
+    }
+}
+
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    height: 2vh;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, orangered , white);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 6%;
+    padding-left: 3%;
+    align-items: center;
+    border: solid orangered 1px;
+}
+
+.cabecalho img {
+    max-width: 20%;
+    height: auto;
+}
+
+
+.botoes a {
+    display: flex;
+    align-items: center;
+    flex-direction: row ;
+    color: orangered;
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif;
+    font-size: 21px;
+    align-items: center;
+    align-self: center;
+}
+
+.botoes a:hover {
+    color: yellow;
+}
+
+hr {
+    height: 2px;
+    color: orangered;
+    border: none;
+    background-color: orangered;
+    margin: 10px 0;
+}
+
+main {
+    padding-top: 3%;
+}
+
+#caso1, #caso2, #caso3, #caso4, #caso5, #caso6, #caso7, #caso8 {
+    display: flex;
+    padding: 0 10% 0 10%;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+input {
+    --c:  orangered; /* the color*/
+    color: orangered;
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  input:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+    color: white;
+  }
+  input:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+
+  input {
+    font-family: system-ui, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
+    background-color: white;
+  }
+
+.caso {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1%;
+  align-items: center;
+}
+
+.caso h1 {
+  font-size: 30px;
+  padding-bottom: 1%;
+}
+
+.caso li {
+  font-size: 20px;
+  padding-top: 0.5%;
+  margin-left: 1%;
+}
+
+.nosso_botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 2%;
+  padding-top: 1%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;   
+}
+
+footer h2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Krona One', sans-serif;
+  background-image: linear-gradient(to left, orangered , white);
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: solid orangered 1px;
+}

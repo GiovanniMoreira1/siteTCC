@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@media (max-width: 768px) {
+    .cabecalho {
+      padding: 1% 3%;
+    }
+    .botoes a {
+      font-size: 18px;
+    }
+    .imagem {
+        width: 90%;
+      }
+}
+
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    height: 2vh;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, orangered , white);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 6%;
+    padding-left: 3%;
+    align-items: center;
+    border: solid orangered 1px;
+}
+
+.cabecalho img {
+    max-width: 20%;
+    height: auto;
+}
+
+
+.botoes a {
+    display: flex;
+    align-items: center;
+    flex-direction: row ;
+    color: orangered;
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif;
+    font-size: 21px;
+    align-items: center;
+    align-self: center;
+    transition: color 0.2s ease;
+}
+
+.botoes a:hover {
+    color: yellow;
+}
+
+hr {
+    height: 2px;
+    color: orangered;
+    border: none;
+    background-color: orangered;
+    margin: 10px 0;
+}
+
+main {
+    padding-top: 3%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-right: 20%;
+    margin-left: 10%;
+    align-items: center;
+    padding: 2% 2% 2% 2%;
+    gap: 1%;
+    color: inherit;
+}
+
+.main h2 {
+    color: orangered;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteudo_main {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-left: 3%;
+    text-decoration: none;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding-bottom: 3%;
+}
+
+.main a {
+    text-decoration: none;
+}
+
+.main p {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1%;
+}
+
+.conteudo_main h2 {
+    transition: color 0.2s ease;
+}
+
+.conteudo_main h2:hover {
+    color: yellow;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-right: 20%;
+    margin-left: 10%;
+    align-items: center;
+    padding: 4% 2% 4% 2%;
+    gap: 1%;
+    color: inherit;
+}
+
+.pesquisa a {
+    text-decoration: none;
+}
+
+.pesquisa p {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1%;
+}
+
+.pesquisa h2 {
+    color: orangered;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;   
+}
+
+footer h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Krona One', sans-serif;
+    background-image: linear-gradient(to left, orangered , white);
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: solid orangered 1px;
+}
