@@ -22,9 +22,11 @@
         <div class="caso" id="caso1">
             <div>
                 <h1>Documentação e regulamentação</h1>
+                <ul>
                     <li>Todos os documentos necessários para o transporte estão com fácil acesso? Documentos como CNH, a licença para transportar produtos perigosos e autorizações específicas para o transporte de combustíveis.</li>
                     <li>Certifique-se que seu veículo atenda todos as regulamentações.</li>
-            </div>
+                </ul>
+                </div>
             <div class="btn">
                 <input type="button" value="Feito!" class="button" onclick="clicar_botao(1)">
             </div>
@@ -32,9 +34,11 @@
         <div class="caso" id="caso2">
             <div>
                 <h1>Inspeção do veículo</h1>
+                <ul>
                     <li>Verifique que seu veículo teve uma Inspeção recente.</li>
                     <li>Verifique se os freios estão funcionando corretamente.</li>
                     <li>Verifique se os pneus estão em boas condições.</li>
+                </ul>                
             </div>
             <div class="btn">
                 <input type="button" value="Feito!" class="button" onclick="clicar_botao(2)">
@@ -112,7 +116,18 @@
             </div>
         </div>
     <div class="nosso_botao">
-        <a href="main.html"><input type="button" value="Concluído!"></a>
+        <input id="botao_final" type="button" value="Concluído!" onclick="mensagem_final()">
+    </div>
+    <div id="final" class="final">
+        <h1 style="color: green;"> Parabéns, o Checklist de verificação foi completo</h1>
+        <h2>Você pode seguir sua viagem de forma tranquila e segura!</h2>
+        <h3>Obrigado pela preferência!</h3>
+        <h4>O que deseja fazer agora?</h4>
+        
+        <div class="opcoes_final">    
+            <a href="home.html">Voltar para a página inicial</a>
+            <a href="checklist.html">Checar novamente o Checklist</a>
+        </div>
     </div>
     </main>
     <footer>
